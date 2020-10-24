@@ -1,10 +1,12 @@
 // webpack.config.js
 const path = require('path')
+const Dotenv = require('dotenv-webpack')
+
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -18,16 +20,16 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-            'style-loader',
-            "css-loader",
-            "resolve-url-loader",
-            "sass-loader?sourceMap"
-        ]
+          'style-loader',
+          'css-loader',
+          'resolve-url-loader',
+          'sass-loader?sourceMap',
+        ],
       },
       {
         test: /\.(jpg|png|webp)$/,
         use: {
-          loader: "url-loader",
+          loader: 'url-loader',
           options: {
             limit: 25000,
           },
@@ -42,4 +44,7 @@ module.exports = {
     contentBase: path.resolve(__dirname, './dist'),
     historyApiFallback: true,
   },
+  plugins: [
+    new Dotenv()
+  ]
 }
