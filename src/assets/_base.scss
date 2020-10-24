@@ -2,6 +2,7 @@
 
 body {
     font-family: Roboto;
+    background: #f5f5f5;
 }
 
 @-webkit-keyframes spin {
@@ -46,4 +47,12 @@ body {
 ::-webkit-scrollbar-track {
     background: #f5f5f5;
     border-radius: 5px;
+}
+
+.big-title {
+    font-size: 4rem;
+    font-weight: 200;
+    margin: 4rem 0;
+    text-align: center;
+    color: #555;
 }

@@ -1,0 +1,125 @@
+$item-bg-color: #fff;
+$item-header-bg-color: #313131;
+$item-header-font-color: #fff;
+$item-header-country-bg-color: #48484a;
+$item-header-country-font-color: #fff;
+
+.weather-list-wrapper {
+  display: flex;
+  margin: 0 -0.5rem;
+  flex-wrap: wrap;
+}
+
+.weather-list-item {
+  background: $item-bg-color;
+  width: calc(100% - 1rem);
+  margin: 0.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 8px 5px rgb(181 181 181 / 57%);
+  }
+}
+
+.weather-list-item-header {
+  display: flex;
+  padding: 1rem;
+  background: $item-header-bg-color;
+  color: $item-header-font-color;
+}
+
+.weather-list-item-header-primary {
+  width: 50%;
+}
+
+.weather-list-item-header-info {
+  width: 50%;
+  text-align: right;
+}
+
+.weather-list-item-header-country {
+  display: inline-flex;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.4rem;
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+  background: $item-header-country-bg-color;
+  color: $item-header-country-font-color;
+}
+
+.weather-list-item-header-name {
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: inline-flex;
+  margin-bottom: 1rem;
+}
+
+.weather-list-item-header-temp {
+  font-size: 3rem;
+  sup {
+    font-size: 2rem;
+  }
+}
+
+.weather-list-item-header-img {
+  max-width: 5em;
+  margin-top: -1rem;
+}
+
+.weather-list-item-header-description {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.weather-list-item-body {
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weather-list-item-body-item {
+  width: 50%;
+  display: flex;
+  margin: 0.4rem 0;
+}
+
+.weather-list-item-body-item-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.4rem;
+}
+.weather-list-item-body-item-info-name {
+  color: #777;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.weather-list-item-body-item-info-value {
+  font-weight: 400;
+}
+
+@media (min-width: 480px) {
+  .weather-list-item {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .weather-list-item {
+    width: calc(33.3333% - 1rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .weather-list-item {
+    width: calc(25% - 1rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .weather-list-item {
+    width: calc(20% - 1rem);
+  }
+}
