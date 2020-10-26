@@ -1,9 +1,11 @@
-import React from 'react'
-// import { useSelector } from 'react-redux'
+import React, { useContext } from 'react'
+import { Context } from '../../store'
 
-const FavoriteCity = props => {
-  // const viewedUsers = useSelector(state => state.users.viewedUsers)
-  return <div>Hey</div>
+const FavoriteCity = () => {
+  const [state, dispatch] = useContext(Context)
+  return state.weather && <div className='favorite-city'>
+    {state.weather.country} {state.weather.city}
+  </div>
 }
 
 export default FavoriteCity
