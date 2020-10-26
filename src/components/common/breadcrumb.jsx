@@ -2,16 +2,16 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const BreadcrumbItem = ({ children, to, current, ...props }) => (
-  <div {...props}>
+  <div className='breadcrumb-item' {...props}>
     {
-      current ? <div>{children}</div> : <NavLink to={to}>{children}</NavLink>
+      current ? <span>{children}</span> : <NavLink to={to}>{children}</NavLink>
     }
   </div>
 )
 
 const Breadcrumb = ({ children }) => (
-  <nav aria-label="Breadcrumb">
-    <div>{children}</div>
+  <nav className='breadcrumb' aria-label="Breadcrumb">
+    <div className='breadcrumb-inner'>{children}</div>
   </nav>
 )
 

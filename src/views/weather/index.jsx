@@ -1,12 +1,13 @@
 import React from 'react'
-// import List from '../../components/weather-list/list'
-// import WeatherBreadcrumb from '../../components/weather-list/breadcrumb'
+import Detail from '../../components/weather/detail'
+import WeatherBreadcrumb from '../../components/weather/breadcrumb'
 
-const Index = () => {
+const Index = ({ match }) => {
+  const city = match.params.city || null
+  
   return <>
-    {/* <WeatherBreadcrumb /> */}
-    {/* <List /> */}
-    hey
+    <WeatherBreadcrumb city={city}/>
+    <Detail city={city}/>
   </>
 }
 
