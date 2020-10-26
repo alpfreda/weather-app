@@ -1,0 +1,23 @@
+.breadcrumb {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.breadcrumb-inner {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+}
+.breadcrumb-item{
+  color: #aaa;
+}
+.breadcrumb-item:not(:first-child):before {
+  content: "";
+  display: inline-block;
+  transform: rotate(15deg);
+  border-right: 1px solid currentcolor;
+  height: 1em;
+  margin: 0px 8px -0.2em;
+  color: #aaa;
+}
