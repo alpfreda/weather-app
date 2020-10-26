@@ -1,0 +1,62 @@
+
+@media (min-width: 480px) {
+  .weather-list-item {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .weather-list-item {
+    width: calc(33.3333% - 1rem);
+  }
+  .weather-detail-primary {
+    width: 50%;
+  }
+  
+  .weather-detail-info {
+    width: 50%;
+  }
+  
+  .weather-detail-days {
+    width: 100%;
+  }
+  .weather-detail-days-item{
+    width: calc(20% - 1rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .weather-list-item {
+    width: calc(25% - 1rem);
+  }
+  .weather-detail-primary {
+    width: 17%;
+    margin-bottom: 0;
+  }
+  
+  .weather-detail-info {
+    width: 18%;
+  }
+  
+  .weather-detail-days {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .weather-list-item {
+    width: calc(20% - 1rem);
+  }
+  .weather-detail-primary {
+    width: 17%;
+    margin-bottom: 0;
+  }
+  
+  .weather-detail-info {
+    width: 18%;
+  }
+  
+  .weather-detail-days {
+    width: 65%;
+  }
+}

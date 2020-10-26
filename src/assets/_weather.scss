@@ -3,10 +3,11 @@ $weather-bg-color: #313131;
 .weather {
   background: #fff;
   border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 
 .weather-detail {
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   background: $weather-bg-color;
   border-radius: 1rem 1rem 0 0;
   display: flex;
@@ -15,24 +16,55 @@ $weather-bg-color: #313131;
 }
 
 .weather-detail-primary {
-  width: 20%;
+  width: 50%;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .weather-detail-info {
-  width: 15%;
+  width: 50%;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
+  font-weight: 100;
   justify-content: space-between;
   padding: 1rem;
 }
 
+.weather-detail-info-temp{
+  font-size: 5rem;
+  color: #009688;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+  text-align: center;
+}
+
+.weather-detail-info-other {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-detail-info-other span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #aaa;
+}
+
 .weather-detail-days {
   display: flex;
-  width: 65%;
+  width: 100%;
   flex-wrap: wrap;
 }
+
+.weather-detail-primary-today{
+  text-align: left;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+}
+
 
 .weather-detail-primary-img {
   margin-top: -1rem;
@@ -45,10 +77,15 @@ $weather-bg-color: #313131;
 }
 
 .weather-detail-days-item {
-  width: calc(20% - 1rem);
+  width: calc(50% - 1rem);
   margin: 0.5rem;
   text-align: center;
+  background: #4a4a4aa1;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
+
 .weather-detail-days-item-name {
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -57,13 +94,31 @@ $weather-bg-color: #313131;
 }
 .weather-detail-days-item-info {
   display: flex;
+  justify-content: center;
   align-items: center;
+  font-weight: 100;
+}
+
+
+.weather-detail-days-item-img {
+  margin: -1rem 0;
 }
 
 .weather-detail-body {
+  padding: 1rem;
+}
+
+.weather-detail-body-title {
+  font-weight: 200;
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+
+.weather-detail-body-items {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem;
 }
 
 .weather-detail-body-item {

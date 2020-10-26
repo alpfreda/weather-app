@@ -58,3 +58,13 @@ a{
     text-align: center;
     color: #555;
 }
+
+.footer{
+    text-align: center;
+    color: #777;
+    font-weight: 300;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
