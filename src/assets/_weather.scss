@@ -3,7 +3,7 @@ $weather-bg-color: #313131;
 .weather {
   background: #fff;
   border-radius: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .weather-detail {
@@ -32,7 +32,7 @@ $weather-bg-color: #313131;
 }
 
 .weather-detail-info-temp {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #009688;
   margin-bottom: 1rem;
   margin-top: -1rem;
@@ -57,12 +57,22 @@ $weather-bg-color: #313131;
   flex-wrap: wrap;
 }
 
-.weather-detail-primary-today {
+.weather-detail-primary-city {
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 200;
   color: #fff;
   text-align: center;
+}
+
+.weather-detail-primary-country {
+  display: inline-flex;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  background: #48484a;
+  color: #fff;
 }
 
 .weather-detail-primary-img {
@@ -70,7 +80,7 @@ $weather-bg-color: #313131;
 }
 
 .weather-detail-primary-state {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 200;
   margin-top: -1.5rem;
   white-space: nowrap;

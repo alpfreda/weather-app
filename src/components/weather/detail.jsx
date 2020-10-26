@@ -15,7 +15,7 @@ const Detail = ({ city }) => {
         {
           weather && <div className='weather'>
             <div className='weather-detail'>
-              <Info weather={weather} />
+              <Info weather={weather}/>
               <div className='weather-detail-days'>
                 {
                   weather.daily.slice(1, 6).map(day => <Daily key={day.dt} day={day} />)
