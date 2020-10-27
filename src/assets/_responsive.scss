@@ -1,4 +1,3 @@
-
 @media (min-width: 480px) {
   .weather-list-item {
     width: calc(50% - 1rem);
@@ -12,16 +11,31 @@
   .weather-detail-primary {
     width: 50%;
   }
-  
+
   .weather-detail-info {
     width: 50%;
   }
-  
+
   .weather-detail-days {
     width: 100%;
   }
-  .weather-detail-days-item{
+  .weather-detail-days-item {
     width: calc(20% - 1rem);
+  }
+
+  .favorite-city-primary-img-box {
+    width: 10%;
+  }
+
+  .favorite-city-primary {
+    width: 20%;
+  }
+
+  .favorite-city-days {
+    width: 70%;
+  }
+  .favorite-city-days-item {
+    width: 33.33%;
   }
 }
 
@@ -33,13 +47,28 @@
     width: 17%;
     margin-bottom: 0;
   }
-  
+
   .weather-detail-info {
     width: 18%;
   }
-  
+
   .weather-detail-days {
     width: 65%;
+  }
+
+  .favorite-city-primary-img-box {
+    width: 10%;
+  }
+
+  .favorite-city-primary {
+    width: 20%;
+  }
+
+  .favorite-city-days {
+    width: 70%;
+  }
+  .favorite-city-days-item {
+    width: 20%;
   }
 }
 
@@ -51,11 +80,11 @@
     width: 17%;
     margin-bottom: 0;
   }
-  
+
   .weather-detail-info {
     width: 18%;
   }
-  
+
   .weather-detail-days {
     width: 65%;
   }

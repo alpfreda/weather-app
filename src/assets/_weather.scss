@@ -28,12 +28,12 @@ $weather-bg-color: #313131;
   flex-direction: column;
   font-weight: 100;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .weather-detail-info-temp {
   font-size: 4rem;
-  color: #009688;
+  color: $base-color;
   margin-bottom: 1rem;
   margin-top: -1rem;
   text-align: center;
@@ -49,6 +49,21 @@ $weather-bg-color: #313131;
   font-size: 0.8rem;
   font-weight: 400;
   color: #aaa;
+}
+
+.weather-detail-add-favorite {
+  padding: 0.4rem;
+  border: 2px solid #E91E63;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 1rem;
+  color: #E91E63;
+  outline: none;
+  transition: 0.3s all ease-in-out;
+  &.selected,&:hover{
+    background: #E91E63;
+    color: #fff;
+  }
 }
 
 .weather-detail-days {
@@ -147,6 +162,6 @@ $weather-bg-color: #313131;
   border-top: 1px solid #eee;
 }
 
-img.weather-detail-body-item-img {
+.weather-detail-body-item-img {
   margin: -0.4rem 0;
 }
