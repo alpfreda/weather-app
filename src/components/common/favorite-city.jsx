@@ -1,12 +1,13 @@
 import React, { useContext } from 'react'
 import { Context } from '../../store'
 import FavoriteCityDaily from './favorite-city-daily'
+import { weatherConstant } from '../../constants/weather'
 
 const FavoriteCity = () => {
   const [state, dispatch] = useContext(Context)
   return state.weather && <div className='favorite-city'>
     <div className='favorite-city-primary-img-box'>
-      <div className='favorite-city-remove' onClick={() => dispatch({ type: 'REMOVE_WEATHER'})}>
+      <div className='favorite-city-remove' onClick={() => dispatch({ type: weatherConstant.REMOVE_WEATHER})}>
       ×
       </div>
       <img src={`http://openweathermap.org/img/wn/${state.weather.current.weather[0].icon}.png`}

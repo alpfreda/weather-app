@@ -1,13 +1,14 @@
 import React, { createContext, useReducer } from "react"
+import { weatherConstant } from './constants/weather'
 
 const Reducer = (state, action) => {
   switch (action.type) {
-    case 'ADD_WEATHER':
+    case weatherConstant.ADD_WEATHER:
       return {
         ...state,
         weather: action.payload
       }
-    case 'REMOVE_WEATHER':
+    case weatherConstant.REMOVE_WEATHER:
       return {
         ...state,
         weather: null
