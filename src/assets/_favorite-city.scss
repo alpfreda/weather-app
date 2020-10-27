@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0.5rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -81,6 +82,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 100%;
+  margin-right: auto;
+  margin-left: 1rem;
   &:hover {
     background: #f44336;
     color: #fff;

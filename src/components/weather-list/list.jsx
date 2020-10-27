@@ -20,7 +20,7 @@ const List = () => {
         {isError && <div>Something went wrong ...</div>}
         {isLoading ? <Loader /> :
             <>
-                <h3 className='big-title'>Click On city form more detail</h3>
+                <h3 className='big-title'>Click On city for more detail</h3>
                 <div className='weather-list-wrapper'>
                     {
                         list.map(city => {
