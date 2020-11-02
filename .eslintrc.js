@@ -11,7 +11,8 @@ module.exports = {
   "ecmaFeatures": {
     "modules": true
   },
-  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "extends": "plugin:react/recommended",
   "parserOptions": {
     "ecmaVersion": 2016,
     "sourceType": "module",

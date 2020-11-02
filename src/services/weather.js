@@ -83,8 +83,8 @@ const useWeatherApi = (city, initialData) => {
         const {data: res} = await axios(url)
         const getDetailUrl = getCityDetailOneCallUrl(res.coord)
         const {data: detailRes} = await axios(getDetailUrl)
-        const data = {...detailRes, country: res.sys.country,city}
-        
+        const data = {...detailRes, country: res.sys.country, city}
+
         dispatch({
           type: weatherConstant.WEATHER_FETCH_SUCCESS,
           payload: data,

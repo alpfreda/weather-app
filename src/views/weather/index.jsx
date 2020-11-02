@@ -4,10 +4,10 @@ import WeatherBreadcrumb from '../../components/weather/breadcrumb'
 
 const Index = ({ match }) => {
   const city = match.params.city || null
-  
+
   return <>
-    <WeatherBreadcrumb city={city}/>
-    <Detail city={city}/>
+    <WeatherBreadcrumb city={city} />
+    <Detail city={city} />
   </>
 }
 

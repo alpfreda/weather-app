@@ -33,6 +33,7 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.0",
     "dotenv-webpack": "^4.0.0",
+    "eslint-plugin-react": "^7.21.5",
     "file-loader": "^6.0.0",
     "regenerator-runtime": "^0.13.7",
     "resolve-url-loader": "^3.1.1",
