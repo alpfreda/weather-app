@@ -2,4 +2,4 @@
 
 weather app with react, react hook and openweathermap api.
 
-Online Demo: https://weather.jsgeek.me 
+Online Demo: https://weather.alpfreda.me 
